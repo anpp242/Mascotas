@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_02"
+    tools:context=".Formulario">
+
+    <TextView
+        android:id="@+id/t_formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:text="FORMULARIO DE ACCESO"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nombrepm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/styles_btn"
+        android:ems="12"
+        android:hint="Tu nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/nMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp"
+        android:background="@drawable/styles_btn"
+        android:ems="12"
+        android:hint="El de tu mascota"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@android:color/background_light" />
+
+    <ImageButton
+        android:id="@+id/btn_cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:maxHeight="12dp"
+        android:maxWidth="12dp"
+        android:onClick="cerrar"
+        app:srcCompat="@drawable/cerrar" />
+
+    <Button
+        android:id="@+id/in_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/styles_btn"
+        android:text="INGRESAR"
+        android:textColor="@android:color/background_light" />
+
+    <RadioGroup
+        android:id="@+id/grupoTm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp">
+
+        <RadioButton
+            android:id="@+id/btn_perro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:checked="true"
+            android:text="Perro"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/btn_gato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:checked="false"
+            android:text="Gato"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
